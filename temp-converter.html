@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JavaScript -->
+   <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="input-wrapper">
+    <p class="title">Temperature converter</p>
+    <select name="Select" id="options" onchange="">
+      <option value="degree-celsius">Degree Celsius - Farenheit</option>
+      <option value="farenheit">Farenheit - Degree Celsius</option>
+    </select>
+    <input type="number" placeholder="Input deg Celcius" class="d-Input" id="d-Input" onkeydown="">
+    <button id="executeButton" onclick="
+      execute()
+    ">Calculate</button>
+    <p class="display"></p>
+  </div>
+</body>
+</html>
